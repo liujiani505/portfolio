@@ -1,5 +1,6 @@
-import { Container, Box, Heading, Stack, Image, Badge} from '@chakra-ui/react'
+import { Container, Box, Heading, Stack, Image} from '@chakra-ui/react'
 import { Button, Flex } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import Section from '../components/section'
 import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiAdobexd, SiAdobeaftereffects} from 'react-icons/si';
 import {FaReact, FaNodeJs} from 'react-icons/fa';
@@ -62,8 +63,8 @@ const Page = () => {
                     <p>Interested in collaborating? Let's get in touch.</p>
 
                     <Stack spacing={4} direction='row' mt={8}>
-                        <Button color='#ffffff' bg="black" size='md'><a href="https://www.linkedin.com/in/jianiliudev/" target="_blank">View LinkedIn</a></Button>
-                        <Button color='#ffffff' bg="black" size='md'><a href="https://github.com/liujiani505" target="_blank">View Github</a></Button>
+                        <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#ffffff' bg="black" size='md'>View LinkedIn</Button></NextLink>
+                        <NextLink href="https://github.com/liujiani505" ><Button color='#ffffff' bg="black" size='md'>View Github</Button></NextLink>
                     </Stack>
                 </Box> 
                 <Box>
@@ -74,7 +75,7 @@ const Page = () => {
             <Section delay={0.2}>
                 <Heading variant="section-title" mt={14} mb={6}>Technologies I've used</Heading>
                 <Section>
-                <p>Development & Design:</p><br/>
+                <p>Development and Design:</p><br/>
                 <Flex gap={3}>
                     <Box>
                     <SiCss3 size="2em" color="#3c99dc"/>
