@@ -56,11 +56,11 @@ const Page = () => {
                         Hello! I&apos;m Jiani, a developer and designer based in Boston.
                     </Heading>
                     <br/>
-                    <p>I love using my full-stack development skills and design aesthetics to build tools that are intuitive and easy to use. I've spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community.</p>
+                    <p>I love using my full-stack development skills and design aesthetics to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community.</p>
                     <br/>
                     <p>My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact. </p> 
                     <br/>
-                    <p>Interested in collaborating? Let's get in touch.</p>
+                    <p>Interested in collaborating? Let&apos;s get in touch.</p>
 
                     <Stack spacing={4} direction='row' mt={8}>
                         <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#ffffff' bg="black" size='md'>View LinkedIn</Button></NextLink>
@@ -73,7 +73,7 @@ const Page = () => {
             </Box>
 
             <Section delay={0.2}>
-                <Heading variant="section-title" mt={14} mb={6}>Technologies I've used</Heading>
+                <Heading variant="section-title" mt={14} mb={6}>Technologies I&apos;ve used</Heading>
                 <Section>
                 <p>Development and Design:</p><br/>
                 <Flex gap={3}>
