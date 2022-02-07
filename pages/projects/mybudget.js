@@ -2,11 +2,12 @@ import { Container, Link, List, ListItem, Text } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import Layout from '../../components/layouts/article'
+import Section from '../../components/section'
 
 const Project = () => (
   <Layout title="MyBudget">
     <Container mt={10} maxW="container.lg" >
-
+    <Section delay={0.2}>
       <Title>
         MyBudget
       </Title>
@@ -32,7 +33,7 @@ const Project = () => (
 
       <ProjectImage src="/images/projects/MyBudget login.png" alt="MyBudget" />
       <ProjectImage src="/images/projects/MyBudget dashboard.png" alt="Inkdrop" />
-
+    </Section>
     </Container>
   </Layout>
 )

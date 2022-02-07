@@ -1,10 +1,12 @@
-import { Container, Box, Heading, Stack, Image} from '@chakra-ui/react'
-import { Button, Flex } from '@chakra-ui/react'
+import { Container, Box, Heading, Stack, Image, Divider, Wrap, WrapItem} from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
-import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiAdobexd, SiAdobeaftereffects} from 'react-icons/si';
+import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery} from 'react-icons/si';
 import {FaReact, FaNodeJs} from 'react-icons/fa';
 import {DiRuby} from 'react-icons/di'
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { useColorModeValue } from '@chakra-ui/react'
 
 
 // import { Canvas, useFrame } from 'react-three-fiber'
@@ -46,94 +48,81 @@ const Page = () => {
             <OrbitControls />
         </Canvas> */}
 
-        <Section delay={0.1}>
             
-        <Container mt={10} maxW="container.lg">
+        <Container mt={14} maxW="container.lg">
             
             <Box display={{md:'flex'}} direction={{ base: 'column', md: 'row' }}>
                 <Box>
+                <RoughNotationGroup>
                     <Heading as="h1" variant="page-title">
-                        Hello! I&apos;m Jiani, a developer and designer based in Boston.
+                        Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#5c5230')} show={true}>developer</RoughNotation> and
+                        <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#5c5230')} show={true}> designer</RoughNotation> based in Boston.
                     </Heading>
                     <br/>
-                    <p>I love using my full-stack development skills and design aesthetics to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community.</p>
+                    <p>I love using my <RoughNotation type="highlight" color={useColorModeValue('#ffd3da', '#783e48')} show={true}>full-stack development skills</RoughNotation> and <RoughNotation type="highlight" color={useColorModeValue('#c3e7fd', '#45667a')} show={true}>design aesthetics</RoughNotation> to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
                     <br/>
-                    <p>My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact. </p> 
-                    <br/>
-                    <p>Interested in collaborating? Let&apos;s get in touch.</p>
-
-                    <Stack spacing={4} direction='row' mt={8}>
-                        <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#ffffff' bg="black" size='md'>View LinkedIn</Button></NextLink>
-                        <NextLink href="https://github.com/liujiani505" ><Button color='#ffffff' bg="black" size='md'>View Github</Button></NextLink>
+                    <p>Interested in collaborating? <RoughNotation type="underline" color="#666666" show={true}>Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
+                    </RoughNotationGroup>
+                    <Stack spacing={4} direction='row' mt={14}>
+                        <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#000000' bg="#CBD5E0" size='md'>View LinkedIn</Button></NextLink>
+                        <NextLink href="https://github.com/liujiani505" ><Button color='#000000' bg="#CBD5E0" size='md'>View Github</Button></NextLink>
                     </Stack>
                 </Box> 
+                <Section delay={0.1}>
                 <Box>
                     <Image borderRadius="md" maxWidth="300px" ml={{base: 0, md: 12}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
                 </Box> 
+                </Section>
             </Box>
-
+            <Divider mt={12}/>
             <Section delay={0.2}>
-                <Heading variant="section-title" mt={14} mb={6}>Technologies I&apos;ve used</Heading>
-                <Section>
-                <p>Development and Design:</p><br/>
-                <Flex gap={3}>
-                    <Box>
-                    <SiCss3 size="2em" color="#3c99dc"/>
-                    </Box>
-                    <Box>
-                    <SiHtml5 size="2em" color="#e34c26"/>
-                    </Box>
-                    <Box>
-                    <SiJavascript size="2em" color="#F0db4f"/>
-                    </Box>
-                    <Box>
-                    <SiJquery size="2em" color="#0868AC"/>
-                    </Box>
-                    <Box>
-                    <SiBootstrap size="2em" color="#563d7c"/>
-                    </Box>
-                    <Box>
-                    <FaReact size="2em" color="#61DAFB"/>
-                    </Box>
-                    <Box>
-                    <FaNodeJs size="2em" color="#3c873a"/>
-                    </Box>
-                    <Box>
-                    <SiExpress size="2em" color="#444444"/>
-                    </Box>
-                    <Box>
-                    <SiMongodb size="2em" color="#4DB33D"/>
-                    </Box>
-                    <Box>
-                    <SiPostgresql size="2em" color="#28547E"/>
-                    </Box>
-                    <Box>
-                    <DiRuby size="2em" color="#A91401"/>
-                    </Box>
-                    <Box>
-                    <SiRubyonrails size="2em" color="#cc0000"/>
-                    </Box>
-                    <Box>
-                    <SiPython size="2em" color="#306998"/>
-                    </Box>
-                    <Box>
-                    <SiDjango size="2em" color="#092e20"/>
-                    </Box>
-                </Flex>
-                </Section>
-
-                <Section>
-                <Flex gap={3}>
-                    <SiAdobephotoshop size="2em" color="#18152E"/>
-                    <SiAdobeillustrator size="2em" color="#3c240c"/>
-                    <SiAdobeindesign size="2em" color="#562f44"/>
-                    <SiAdobexd size="2em" colora="#6c124c"/>
-                    <SiAdobeaftereffects size="2em" color="#393665"/>
-                </Flex>
-                </Section>
+                <Heading  mt={8} mb={10}>Technologies I&apos;ve used</Heading>
+                <Wrap spacing='2em'>
+                    <WrapItem>
+                    <SiCss3 size="4em" color="#3c99dc"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiHtml5 size="4em" color="#e34c26"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiJavascript size="4em" color="#F0db4f"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiJquery size="4em" color="#0868AC"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiBootstrap size="4em" color="#563d7c"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <FaReact size="4em" color="#61DAFB"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <FaNodeJs size="4em" color="#3c873a"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiExpress size="4em" color={useColorModeValue('#444444', '#999999')} />
+                    </WrapItem>
+                    <WrapItem>
+                    <SiMongodb size="4em" color="#4DB33D"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiPostgresql size="4em" color="#28547E"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <DiRuby size="4em" color="#A91401"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiRubyonrails size="4em" color="#cc0000"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiPython size="4em" color="#306998"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <SiDjango size="4em" color={useColorModeValue('#092e20', '#21694d')}/>
+                    </WrapItem>
+                </Wrap>
             </Section>
         </Container>
-        </Section>
         </>
     )
 }
