@@ -55,11 +55,11 @@ const Page = () => {
                 <Box>
                 <RoughNotationGroup>
                     <Heading as="h1" variant="page-title">
-                        Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#5c5230')} show={true}>developer</RoughNotation> and
-                        <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#5c5230')} show={true}> designer</RoughNotation> based in Boston.
+                        Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#4A5568')} show={true}>developer</RoughNotation> and
+                        <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#4A5568')} show={true}> designer</RoughNotation> based in Boston.
                     </Heading>
                     <br/>
-                    <p>I love using my <RoughNotation type="highlight" color={useColorModeValue('#ffd3da', '#783e48')} show={true}>full-stack development skills</RoughNotation> and <RoughNotation type="highlight" color={useColorModeValue('#c3e7fd', '#45667a')} show={true}>design aesthetics</RoughNotation> to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
+                    <p>I love using my <RoughNotation type="highlight" color={useColorModeValue('#E2E8F0', '#4A5568')} show={true}>full-stack development skills</RoughNotation> and <RoughNotation type="highlight" color={useColorModeValue('#E2E8F0', '#4A5568')} show={true}>design aesthetics</RoughNotation> to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
                     <br/>
                     <p>Interested in collaborating? <RoughNotation type="underline" color="#666666" show={true}>Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
                     </RoughNotationGroup>
