@@ -59,7 +59,7 @@ const Page = () => {
                         <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#4A5568')} show={true}> designer</RoughNotation> based in Boston.
                     </Heading>
                     <br/>
-                    <p>I enjoy using my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#4A5568')} show={true}>full-stack developer skills</RoughNotation> and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#4A5568')} show={true}>design aesthetics</RoughNotation> to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
+                    <p>I enjoy using my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#4A5568')} show={true}>full-stack developer</RoughNotation> skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#4A5568')} show={true}> design </RoughNotation> aesthetics to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
                     <br/>
                     <p>Interested in collaborating? <RoughNotation type="underline" color="#666666" show={true}>Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
                     </RoughNotationGroup>
@@ -70,7 +70,7 @@ const Page = () => {
                 </Box> 
                 <Section delay={0.1}>
                 <Box>
-                    <Image borderRadius="md" width="850px" ml={{base: 0, md: 12}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
+                    <Image borderRadius="md" width="950px" ml={{base: 0, md: 3}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
                 </Box> 
                 </Section>
             </Box>
