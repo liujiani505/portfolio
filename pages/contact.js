@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Button, Input, Textarea, FormControl, FormLabel, Alert, AlertIcon} from "@chakra-ui/react";
+import { Container, Box, Heading, Button, Input, Textarea, FormControl, FormLabel} from "@chakra-ui/react";
 import Section from '../components/section'
 import { useState } from "react";
 
