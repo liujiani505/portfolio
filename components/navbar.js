@@ -32,9 +32,8 @@ const Navbar = props => {
             <Container display="flex" mt={3} maxW="container.lg" wrap="wrap" justifyContent="space-between" >
 
                 <Flex>
-                    <a href='/'>
-                    <Heading as="h6" size="sm" mt={2} letterSpacing={'widest'}>JIANI LIU</Heading>
-                    </a>
+                    
+                    <Heading as="h6" size="sm" mt={2} letterSpacing={'widest'}><a href="/">JIANI LIU</a></Heading>
                 </Flex>
 
                 <Stack 
