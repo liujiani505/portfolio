@@ -13,7 +13,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
                 loading="lazy"
             />
             <LinkOverlay href={href} target="_blank">
-                <Text mt={2} ><strong>{title}</strong></Text>
+                <Text mt={2}><strong>{title}</strong></Text>
             </LinkOverlay>
             <Text fontSize={14}>{children}</Text>
         </LinkBox>    
@@ -31,11 +31,11 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
             placeholder="blur"
           />
           <LinkOverlay href={`/projects/${id}`}>
-            <Text mt={2} fontSize={20}>
+            <Text mt={4} fontSize={20}>
             <strong>{title}</strong>
             </Text>
           </LinkOverlay>
-          <Text fontSize={14}>{children}</Text>
+          <Text fontSize={14} mt={2}>{children}</Text>
         </LinkBox>
       </NextLink>
     </Box>
