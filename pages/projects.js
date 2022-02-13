@@ -16,7 +16,7 @@ const Projects = () => {
                     <SimpleGrid columns={[1,1,2]} gap={10}>
                         <ProjectGridItem id="mybudget" title="MyBudget" thumbnail={thumbMyBudget}>Mybudget is a budget tracker with full CRUD bulit with Django. Users can create/edit/delete expense and income.</ProjectGridItem>
                         <ProjectGridItem id="eyeonart" title="Eye on Art" thumbnail={thumbEyeOnArt}>Eye on Art is a blog application with full CRUD (Create, Read, Update, Destroy) built with Ruby on Rails for backend and React for frontend.</ProjectGridItem>
-                        <ProjectGridItem id="myportfolio" title="Jiani Liu's Portfolio" thumbnail={thumbPortfolio}>This is my personal portfolio to showcase my favorite developer projects.</ProjectGridItem>
+                        <ProjectGridItem id="myportfolio" title="My Portfolio" thumbnail={thumbPortfolio}>This is my personal portfolio to showcase my favorite developer projects.</ProjectGridItem>
                     </SimpleGrid>
                 </Section>
         </Container>

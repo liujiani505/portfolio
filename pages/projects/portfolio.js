@@ -9,7 +9,7 @@ const Project = () => (
     <Container mt={10} maxW="container.lg" >
     <Section delay={0.2}>
       <Title>
-        Jiani Liu's Portfolio
+        My Portfolio
       </Title>
       <Text mt={10}>This portfolio was crafted with Next.js and Chakra UI to showcase my developer projects.</Text>
 
