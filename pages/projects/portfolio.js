@@ -11,7 +11,7 @@ const Project = () => (
       <Title>
         My Portfolio
       </Title>
-      <Text mt={10}>This portfolio was crafted with Next.js and Chakra UI to showcase my developer projects.</Text>
+      <Text mt={10}>This portfolio was crafted with Next.js and Chakra UI to showcase my favorite projects.</Text>
 
       <List my={4}>
       <ListItem>
@@ -31,8 +31,8 @@ const Project = () => (
         </ListItem>
       </List>
 
-      <ProjectImage src="/images/projects/EyeOnArt home.png" alt="My Portfolio" />
-      <ProjectImage src="/images/projects/EyeOnArt posts.png" alt="My Portfolio" />
+      <ProjectImage src="/images/projects/Portfolio about page.png" alt="My Portfolio" />
+      <ProjectImage src="/images/projects/Portfolio projects page.png" alt="My Portfolio" />
     </Section>
     </Container>
   </Layout>
