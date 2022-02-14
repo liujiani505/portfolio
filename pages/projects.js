@@ -5,6 +5,7 @@ import { ProjectGridItem } from '../components/grid-item'
 import thumbMyBudget from '../public/images/projects/MyBudget.png'
 import thumbEyeOnArt from '../public/images/projects/EyeOnArt.png'
 import thumbPortfolio from '../public/images/projects/Portfolio about.png'
+import thumbWeatherApp from '../public/images/projects/WeatherApp.png'
 
 const Projects = () => {
     return (
@@ -17,6 +18,7 @@ const Projects = () => {
                         <ProjectGridItem id="mybudget" title="MyBudget" thumbnail={thumbMyBudget}>Mybudget is a budget tracker with full CRUD bulit with Django. Users can create/edit/delete expense and income.</ProjectGridItem>
                         <ProjectGridItem id="eyeonart" title="Eye on Art" thumbnail={thumbEyeOnArt}>Eye on Art is a blog application with full CRUD (Create, Read, Update, Destroy) built with Ruby on Rails for backend and React for frontend.</ProjectGridItem>
                         <ProjectGridItem id="portfolio" title="My Portfolio" thumbnail={thumbPortfolio}>This is my personal portfolio to showcase my favorite projects.</ProjectGridItem>
+                        <ProjectGridItem id="weatherapp" title="WeatherApp" thumbnail={thumbWeatherApp}>This is a simple application to check weather information based on city.</ProjectGridItem>
                     </SimpleGrid>
                 </Section>
         </Container>
