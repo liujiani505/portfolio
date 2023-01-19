@@ -9,7 +9,7 @@ const Project = () => (
     <Container mt={10} maxW="container.lg" >
     <Section delay={0.2}>
       <Title>
-        My Portfolio
+        WeatherApp
       </Title>
       <Text mt={10}>WeatherApp is a simple weather application built with HTML, CSS and JavaScript and JQuery, using OpenWeatherMap API and Unsplash API. Users can search for a city to get daily and upcoming forecasts. </Text>
 
