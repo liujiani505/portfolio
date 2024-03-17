@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Container, Box, Heading, Stack, Image, Divider, Wrap, WrapItem} from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -10,22 +11,25 @@ import { useColorModeValue } from '@chakra-ui/react'
 
 
 const Page = () => {
+    const [showRoughNotation, setShowRoughNotation] = useState(true);
+
     return (
         <>
         <Container mt={14} maxW="container.lg">
             
             <Box display={{md:'flex'}} direction={{ base: 'column', md: 'row' }}>
                 <Box>
-                <RoughNotationGroup>
-                    <Heading as="h1" variant="page-title">
-                        Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} show={true}>developer</RoughNotation> and
-                        <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} show={true}> designer</RoughNotation> based in Boston.
-                    </Heading>
-                    <br/>
-                    <p>I enjoy using my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} show={true}>full-stack developer skills</RoughNotation> and design <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} show={true}> aesthetics</RoughNotation> to build tools that are intuitive and easy to use. I&apos;ve spent seven years creating digital designs to help universities advance their mission in building better experiences for students and the campus community. My goal is to combine my experiences and passion working with vision driven organizations to make a larger social impact.</p> 
-                    <br/>
-                    <p>Interested in collaborating? <RoughNotation type="underline" color="#666666" show={true}>Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
+                    <RoughNotationGroup show={showRoughNotation}>
+                        <Heading as="h1" variant="page-title">
+                            Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} >developer</RoughNotation> and
+                            <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} > designer</RoughNotation> based in Boston.
+                        </Heading>
+                        <br/>
+                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >development </RoughNotation> skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX</RoughNotation><RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')}> design</RoughNotation> knowledge to create intuitive and user-friendly tools. Over the past eight years, I've been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
+                        <br/>
+                        <p>Interested in collaborating? <RoughNotation type="underline" color="#666666">Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
                     </RoughNotationGroup>
+        
                     <Stack spacing={4} direction='row' mt={8}>
                         <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#000000' bg="#CBD5E0" size='md'>View LinkedIn</Button></NextLink>
                         <NextLink href="https://github.com/liujiani505" ><Button color='#000000' bg="#CBD5E0" size='md'>View Github</Button></NextLink>
@@ -33,7 +37,7 @@ const Page = () => {
                 </Box> 
                 <Section delay={0.1}>
                 <Box>
-                    <Image borderRadius="md" width="950px" ml={{base: 0, md: 3}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
+                    <Image borderRadius="md" width="950px" ml={{base: 0, md: 6}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
                 </Box> 
                 </Section>
             </Box>
