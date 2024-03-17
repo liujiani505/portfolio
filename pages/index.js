@@ -2,8 +2,8 @@ import { Container, Box, Heading, Stack, Image, Divider, Wrap, WrapItem} from '@
 import { Button } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
-import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiHeroku, SiNetlify} from 'react-icons/si';
-import {FaReact, FaNodeJs} from 'react-icons/fa';
+import {SiHtml5, SiCss3, SiJavascript, SiTypescript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiHeroku, SiNetlify} from 'react-icons/si';
+import {FaReact, FaNodeJs, FaAngular} from 'react-icons/fa';
 import {DiRuby} from 'react-icons/di'
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { useColorModeValue } from '@chakra-ui/react'
@@ -51,10 +51,16 @@ const Page = () => {
                     <SiJavascript size="3em" color="#F0db4f"/>
                     </WrapItem>
                     <WrapItem>
+                    <SiTypescript size="3em" color="#3178c6"/>
+                    </WrapItem>
+                    <WrapItem>
                     <SiJquery size="3em" color="#0868AC"/>
                     </WrapItem>
                     <WrapItem>
                     <SiBootstrap size="3em" color="#563d7c"/>
+                    </WrapItem>
+                    <WrapItem>
+                    <FaAngular size="3.2em" color="#dd0031"/>
                     </WrapItem>
                     <WrapItem>
                     <FaReact size="3em" color="#61DAFB"/>
