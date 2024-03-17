@@ -11,7 +11,7 @@ import { useColorModeValue } from '@chakra-ui/react'
 
 
 const Page = () => {
-    const [showRoughNotation, setShowRoughNotation] = useState(true);
+    const [showRoughNotation] = useState(true);
 
     return (
         <>
@@ -25,7 +25,7 @@ const Page = () => {
                             <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} > designer</RoughNotation> based in Boston.
                         </Heading>
                         <br/>
-                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >development </RoughNotation> skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX</RoughNotation><RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')}> design</RoughNotation> knowledge to create intuitive and user-friendly tools. Over the past eight years, I've been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
+                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >development </RoughNotation> skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX</RoughNotation><RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')}> design</RoughNotation> knowledge to create intuitive and user-friendly tools. Over the past eight years, I&apos;ve been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
                         <br/>
                         <p>Interested in collaborating? <RoughNotation type="underline" color="#666666">Let&apos;s <NextLink href="/contact">get in touch.</NextLink></RoughNotation></p>
                     </RoughNotationGroup>
