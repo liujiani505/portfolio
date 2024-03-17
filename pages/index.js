@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Container, Box, Heading, Stack, Image, Divider, Wrap, WrapItem} from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
-import {SiHtml5, SiCss3, SiJavascript, SiTypescript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiHeroku, SiNetlify} from 'react-icons/si';
-import {FaReact, FaNodeJs, FaAngular} from 'react-icons/fa';
+import {SiHtml5, SiCss3, SiJavascript, SiTypescript, SiBootstrap, SiExpress, SiMongodb, SiPostgresql, SiRubyonrails, SiPython, SiDjango, SiJquery, SiHeroku, SiNetlify} from 'react-icons/si'
+import {FaReact, FaNodeJs, FaAngular} from 'react-icons/fa'
 import {DiRuby} from 'react-icons/di'
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
 import { useColorModeValue } from '@chakra-ui/react'
 
 
@@ -17,35 +17,35 @@ const Page = () => {
         <>
         <Container mt={14} maxW="container.lg">
             
-            <Box display={{md:'flex'}} direction={{ base: 'column', md: 'row' }}>
+            <Box display={{md:'flex'}} flexDirection={{ base: 'column', md: 'row' }}>
                 <Box>
                     <RoughNotationGroup show={showRoughNotation}>
                         <Heading as="h1" variant="page-title">
-                            Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} >developer</RoughNotation> and
-                            <RoughNotation type="highlight" color={useColorModeValue('#fff176', '#2D3748')} > designer</RoughNotation> based in Boston.
+                            Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#cde881', '#44635d')} >developer</RoughNotation> and
+                            <RoughNotation type="highlight" color={useColorModeValue('#cde881', '#44635d')} > designer</RoughNotation> based in Boston.
                         </Heading>
                         <br/>
-                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >development </RoughNotation> skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX </RoughNotation>design knowledge to create intuitive and user-friendly tools. Over the past eight years, I&apos;ve been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
+                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> development skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX </RoughNotation>design knowledge to create intuitive and user-friendly tools. Over the past eight years, I&apos;ve been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
                         <br/>
                         <p>Interested in collaborating?<NextLink href="/contact"> Let&apos;s get in touch.</NextLink></p>
                     </RoughNotationGroup>
         
                     <Stack spacing={4} direction='row' mt={8}>
-                        <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color='#000000' bg="#CBD5E0" size='md'>View LinkedIn</Button></NextLink>
-                        <NextLink href="https://github.com/liujiani505" ><Button color='#000000' bg="#CBD5E0" size='md'>View Github</Button></NextLink>
+                        <NextLink href="https://www.linkedin.com/in/jianiliudev/"><Button color={useColorModeValue('#FAF9F6', 'black')} bg={useColorModeValue('black', '#FAF9F6')} size='md'>View LinkedIn</Button></NextLink>
+                        <NextLink href="https://github.com/liujiani505" ><Button color={useColorModeValue('#FAF9F6', 'black')} bg={useColorModeValue('black', '#FAF9F6')} size='md'>View Github</Button></NextLink>
                     </Stack>
                 </Box> 
                 <Section delay={0.1}>
-                <Box>
-                    <Image borderRadius="md" width="950px" ml={{base: 0, md: 6}} mt={{ base: 8, md: 0 }} display="inline-block" src="/images/About+me+photo.jpg" alt="Profile Image"/>
-                </Box> 
+                    <Box position="relative"  minWidth="330px" minHeight="380px" justifyContent="center" alignItems="center" overflow="hidden" borderRadius="md" mx="auto" ml={{ md: 8}} mt={{ base: 8, md: 0 }}>
+                        <Image src="/images/Profile.jpg" alt="Profile Image" objectFit="cover" width="100%" height="100%" />
+                    </Box>
                 </Section>
             </Box>
             <Divider mt={12}/>
             <Section delay={0.2}>
                 <Heading variant='section-title' mt={10} mb={8}>Technologies I&apos;ve used</Heading>
                 <Wrap spacing='2em'>
-                    <WrapItem>
+                    <WrapItem>``
                     <SiCss3 size="3em" color="#3c99dc"/>
                     </WrapItem>
                     <WrapItem>

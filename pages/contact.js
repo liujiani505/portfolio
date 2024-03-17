@@ -1,6 +1,7 @@
 import { Container, Box, Heading, Button, Input, Textarea, FormControl, FormLabel} from "@chakra-ui/react";
-import Section from '../components/section'
+import Section from '../components/section';
 import { useState } from "react";
+import { useColorModeValue } from '@chakra-ui/react';
 
 
 const Contact = () => {
@@ -43,6 +44,7 @@ const Contact = () => {
                     <p>To inquire about collaborations or potential projects, get in touch with me!</p>
                 </Section>
                 <Section delay={0.2}>
+                    <Box maxWidth="600px" ml={0}>
                     <form method ="post" onSubmit={handleOnSubmit}>
                         <FormControl isRequired>
                             <FormLabel htmlFor='name'>Name</FormLabel>
@@ -52,8 +54,9 @@ const Contact = () => {
                             <FormLabel htmlFor='message' mt={3}>Message</FormLabel>
                             <Textarea name='message' placeholder='Enter your message' value={newForm.message} onChange={handleChange}/>                       
                         </FormControl>
-                        <Button type="submit" color='#000000' bg="#CBD5E0" size='md' mt={6}>Submit</Button><br/>
+                        <Button color={useColorModeValue('#FAF9F6', 'black')} bg={useColorModeValue('black', '#FAF9F6')} type="submit" size='md' mt={6}>Submit</Button><br/>
                     </form>
+                    </Box>
                 <Box mt={5} color="#38B2AC">{message}</Box>
                 </Section>
 

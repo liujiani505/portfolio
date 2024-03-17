@@ -1,60 +1,64 @@
-import NextLink from 'next/link'
-import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+import NextLink from 'next/link';
+import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
 
-const LinkItem = ({ href, path, children, ...props }) => {
-    const active = path === href
-    const inactiveColor = useColorModeValue('gray200', 'white')
+const LinkItem = ({ href, children, ...props }) => {
+    const textColor = useColorModeValue('black', 'white');
     return (
         <NextLink href={href} passHref>
             <Link 
-            bg={active ? 'gray.900' : undefined}
-            color={active ? 'white' : inactiveColor}
-            {...props}
+                bg='transparent'
+                color={textColor}
+                {...props}
             >{children}</Link>
         </NextLink>
-    )
-}
+    );
+};
 
-const Navbar = props => {
-    const { path } = props
-    const bg = useColorModeValue('#ffffff', '#20202380')
+const Navbar = ({ props }) => {
+    const bg = useColorModeValue('#ffffff', '#20202380');
     return (
         <Box
-        position="fixed"
-        as="nav"
-        w="100%"
-        bg={bg}
-        zIndex={1}
-        {...props}
+            position="fixed"
+            as="nav"
+            w="100%"
+            bg={bg}
+            zIndex={1}
+            {...props}
         >
-            <Container display="flex" mt={3} maxW="container.lg" wrap="wrap" justifyContent="space-between" >
-
-                <Flex>
-                    
-                    <Heading as="h6" size="sm" mt={2} letterSpacing={'widest'}><a href="/">JIANI LIU</a></Heading>
+            <Container maxW="container.lg" display="flex" justifyContent="space-between" alignItems="center" wrap="wrap" mt={3}>
+                <Flex align="center" mr={12}>
+                    <NextLink href="/" passHref>
+                        <Link>
+                            <Heading as="h6" size="md" letterSpacing={'widest'}>
+                                JIANI LIU
+                            </Heading>
+                        </Link>
+                    </NextLink>
                 </Flex>
 
-                <Stack 
-                direction={{ base: 'column', md: 'row' }}
-                display={{ base: 'none', md: 'flex' }}
-                width={{ base: 'full', md: 'auto' }}
-                // flexGrow={3}
-                mt={{ base: 4, md: 0 }}
+                <Box
+                    display={{ base: 'none', md: 'block' }} 
+                    flexBasis={{ base: "100%", md: "auto" }}
                 >
-                    <LinkItem  p={2} href="/" path={path} >About</LinkItem>
-                    <LinkItem  p={2} href="/projects" path={path} >Projects</LinkItem>
-                    <LinkItem  p={2} href="/contact" path={path} >Contact</LinkItem>
-                </Stack>
+                    <Stack 
+                        direction={{ base: 'column', md: 'row' }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={8}
+                    >
+                        <LinkItem p={2} href="/" >About</LinkItem>
+                        <LinkItem p={2} href="/projects" >Projects</LinkItem>
+                        <LinkItem p={2} href="/contact" >Contact</LinkItem>
+                    </Stack>
+                </Box>
 
-                <Box align="right">
+                <Box flex={1} textAlign="right">
                     <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
-                            <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" 
-                            aria-label="Options" 
-                            />
+                            <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
                             <MenuList>
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
@@ -69,10 +73,9 @@ const Navbar = props => {
                         </Menu>
                     </Box>
                 </Box>
-
             </Container>
-        </Box>   
-    )  
-}
+        </Box>
+    );
+};
 
-export default Navbar
+export default Navbar;
