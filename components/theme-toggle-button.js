@@ -16,7 +16,7 @@ const ThemeToggleButton = () => {
             >
                 {/* <IconButton aria-label="Toggle theme" colorScheme={useColorModeValue('gray', '#cee082')} _focus={{ boxShadow: 'none' }} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode}
                 ></IconButton> */}
-                <IconButton aria-label="Toggle theme" backgroundColor={useColorModeValue('gray.100', '#cee082')} color={useColorModeValue('black', 'black')} _focus={{ boxShadow: 'none' }} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode}></IconButton>
+                <IconButton aria-label="Toggle theme" backgroundColor={useColorModeValue('gray.100', '#cee082')} color={useColorModeValue('black', 'black')} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode}></IconButton>
             </motion.div>
         </AnimatePresence>    
     )

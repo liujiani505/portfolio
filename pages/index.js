@@ -10,6 +10,28 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
 import { useColorModeValue } from '@chakra-ui/react'
 
 
+const technologies = [
+    { icon: SiHtml5, color: "#e34c26" },
+    { icon: SiCss3, color: "#3c99dc" },
+    { icon: SiJavascript, color: "#F0db4f" },
+    { icon: SiTypescript, color: "#3178c6" },
+    { icon: SiBootstrap, color: "#563d7c" },
+    { icon: SiExpress, color: "#444444" },
+    { icon: SiMongodb, color: "#4DB33D" },
+    { icon: SiPostgresql, color: "#28547E" },
+    { icon: SiRubyonrails, color: "#cc0000" },
+    { icon: SiPython, color: "#306998" },
+    { icon: SiDjango, color: "#092e20" }, 
+    { icon: SiJquery, color: "#0868AC" },
+    { icon: SiHeroku, color: "#6762A6" }, 
+    { icon: SiNetlify, color: "32b4ba" },
+    { icon: FaAngular, color: "#dd0031", size: "3.2em" },
+    { icon: FaReact, color: "#61DAFB" },
+    { icon: FaNodeJs, color: "#3c873a" },
+    { icon: DiRuby, color: "#A91401" }
+  ];
+
+
 const Page = () => {
     const [showRoughNotation] = useState(true);
 
@@ -45,60 +67,9 @@ const Page = () => {
             <Section delay={0.2}>
                 <Heading variant='section-title' mt={10} mb={8}>Technologies I&apos;ve used</Heading>
                 <Wrap spacing='2em'>
-                    <WrapItem>``
-                    <SiCss3 size="3em" color="#3c99dc"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiHtml5 size="3em" color="#e34c26"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiJavascript size="3em" color="#F0db4f"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiTypescript size="3em" color="#3178c6"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiJquery size="3em" color="#0868AC"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiBootstrap size="3em" color="#563d7c"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <FaAngular size="3.2em" color="#dd0031"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <FaReact size="3em" color="#61DAFB"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <FaNodeJs size="3em" color="#3c873a"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiExpress size="3em" color={useColorModeValue('#444444', '#999999')} />
-                    </WrapItem>
-                    <WrapItem>
-                    <SiMongodb size="3em" color="#4DB33D"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiPostgresql size="3em" color="#28547E"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <DiRuby size="3em" color="#A91401"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiRubyonrails size="3em" color="#cc0000"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiPython size="3em" color="#306998"/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiDjango size="3em" color={useColorModeValue('#092e20', '#21694d')}/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiHeroku size="3em" color={useColorModeValue('#6762A6', '#C9C3E6')}/>
-                    </WrapItem>
-                    <WrapItem>
-                    <SiNetlify size="3em" color="32b4ba"/>
-                    </WrapItem>
+                    {technologies.map(({icon:Icon, color, size="3em"}, index)=>(
+                        <WrapItem key={index}><Icon size={size} color={color}/></WrapItem>
+                    ))}
                 </Wrap>
             </Section>
         </Container>
