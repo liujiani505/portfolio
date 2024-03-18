@@ -43,11 +43,11 @@ const Page = () => {
                 <Box>
                     <RoughNotationGroup show={showRoughNotation}>
                         <Heading as="h1" variant="page-title">
-                            Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#cde881', '#44635d')} >developer</RoughNotation> and
-                            <RoughNotation type="highlight" color={useColorModeValue('#cde881', '#44635d')} > designer</RoughNotation> based in Boston.
+                            Hello! I&apos;m Jiani, a <RoughNotation type="highlight" color={useColorModeValue('#c9e922', '#546b25')} >developer</RoughNotation> and
+                            <RoughNotation type="highlight" color={useColorModeValue('#c9e922', '#546b25')} > designer</RoughNotation> based in Boston.
                         </Heading>
                         <br/>
-                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >front-end</RoughNotation> development skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#2D3748')} >UI/UX </RoughNotation>design knowledge to create intuitive and user-friendly tools. Over the past eight years, I&apos;ve been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
+                        <p>I enjoy leveraging my <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#414a50')} >front-end</RoughNotation> development skills and <RoughNotation type="highlight" color={useColorModeValue('#CBD5E0', '#414a50')} >UI/UX </RoughNotation>design knowledge to create intuitive and user-friendly tools. Over the past eight years, I&apos;ve been dedicated to bridging design and technical solutions that empower both non-profit and profit-driven organizations to enhance their missions by delivering better experiences for their communities. My goal is to combine my experiences and passion for working with vision-driven organizations to make a more substantial social impact.</p> 
                         <br/>
                         <p>Interested in collaborating?<NextLink href="/contact"> Let&apos;s get in touch.</NextLink></p>
                     </RoughNotationGroup>
