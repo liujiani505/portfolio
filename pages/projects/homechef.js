@@ -9,7 +9,7 @@ const Project = () => (
     <Container mt={10} maxW="container.lg" >
     <Section delay={0.2}>
       <Title>
-        MyBudget
+        HomeChef
       </Title>
       <Text mt={10}>HomeChef is a recipe book with full CRUD bulit with Angular. Users can create, edit, delete recipes.</Text>
 
