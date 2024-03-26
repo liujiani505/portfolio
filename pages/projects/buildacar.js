@@ -1,6 +1,5 @@
-import { Container, Link, List, ListItem, Text, Image} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, ProjectImage, Meta } from '../../components/project'
+import { Container, List, ListItem, Text, Image} from '@chakra-ui/react'
+import { Title, ProjectImage} from '../../components/project'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 
