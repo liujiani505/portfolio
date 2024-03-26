@@ -31,8 +31,8 @@ const Project = () => (
         </ListItem>
       </List>
 
-      <ProjectImage src="/images/projects/coinwatch home.png" alt="WeatherApp" />
-      <ProjectImage src="/images/projects/coinwatch detail.png" alt="WeatherApp" />
+      <ProjectImage src="/images/projects/coinwatch home.png" alt="coinwatch" />
+      <ProjectImage src="/images/projects/coinwatch detail.png" alt="coinwatch" />
     </Section>
     </Container>
   </Layout>
