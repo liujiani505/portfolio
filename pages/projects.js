@@ -17,8 +17,8 @@ const Projects = () => {
                 <Section delay={0.2}>
                     <SimpleGrid columns={[1,1,2]} gap={10}>
                         <ProjectGridItem id="buildacar" title="Build-A-Car" thumbnail={thumbbuildacar}>Strategic UX Overhaul of the “Build-A-Car” Feature</ProjectGridItem>
-                        <ProjectGridItem id="coinwatch" title="coinwatch" thumbnail={thumbcoinwatch}>coinwatch is a cryptocurrency price tracker built with Angular and Angular Material UI.</ProjectGridItem>
                         <ProjectGridItem id="homechef" title="HomeChef" thumbnail={thumbHomeChef}>HomeChef is a recipe book with full CRUD bulit with Angular. Users can create/edit/delete recipes.</ProjectGridItem>
+                        <ProjectGridItem id="coinwatch" title="coinwatch" thumbnail={thumbcoinwatch}>coinwatch is a cryptocurrency price tracker built with Angular and Angular Material UI.</ProjectGridItem>
                         <ProjectGridItem id="translatorapp" title="Translator App" thumbnail={thumbtranslatorapp}>This is a simple translator app built with vanilla JavaScript and a translator API.</ProjectGridItem>
                         <ProjectGridItem id="weatherapp" title="WeatherApp" thumbnail={thumbWeatherApp}>This is a simple application to check weather information based on city.</ProjectGridItem>
                     </SimpleGrid>
