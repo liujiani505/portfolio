@@ -6,13 +6,13 @@ import Section from '../../components/section'
 
 const Project = () => (
   <Layout title="Build-A-Car">
-    <Container mt={10} maxW="container.lg" >
+    <Container mt={10} maxW="container.md" >
     <Section delay={0.2}>
       <Title>
         Build-A-Car
       </Title>
       <List>
-      <ListItem>
+        <ListItem>
           <p><strong>Role:</strong> <span>Lead UI/UX Designer, Front-End Developer</span></p>
         </ListItem>
       </List>
@@ -59,7 +59,32 @@ const Project = () => (
       </Text>
       <Text mt={5}>To address this, I implemented “Save as Draft” and “View Draft” functionalities. These features allow retailers to handle interruptions without stress, confident that their progress is saved and can be effortlessly picked up later. The introduction of these features was met with great enthusiasm, significantly enhancing workflow and efficiency for our busy retailers.
       </Text>
-
+      <Image src="/images/projects/Save and View Draft.gif" alt="buildacar" mt={10}  width="100%"/>
+      <Text fontSize="2xl" fontWeight="bold" mt={10}>
+      Bringing the Build-A-Car Design to Life
+      </Text>
+      <Text mt={5}>With the user-centric design in place, the next phase was to breathe life into the static visuals and transform them into a dynamic, fully-functional application. This is where the development process took center stage, with a focus on implementing the refined ‘Build-A-Car’ feature using Angular for the front end and .NET for the backend.
+      </Text>
+      <Text mt={5}>As part of the front-end team, I was involved in developing the user interface, which presents a selection of available cars in a clean grid layout that emphasizes ease of access and interaction. Leveraging Angular’s dynamic data binding, I ensured that each car’s ‘Configure’ button led to a seamless customization process. Using Angular’s reactive forms, I worked to make sure form inputs and validations were responsive, offering instant feedback to guide retailers through customer interactions. My contribution also extended to state management, where I helped implement ‘Save as Draft’ and ‘View Draft’ features using Angular services and RxJS observables. This was crucial for preserving user data across sessions and ensuring a seamless experience for our retailers.
+      </Text>
+      <Text mt={5}>In close collaboration with the back-end team, who harnessed .NET’s capabilities, we established a reliable infrastructure for the application’s data operations. I worked alongside .NET specialists to define the requirements for RESTful APIs, which allowed for the efficient transfer of data, including customer details and car configurations.
+      </Text>
+      <Text fontSize="2xl" fontWeight="bold" mt={10}>
+      Measuring the Impact of the Build-A-Car Redesign
+      </Text>
+      <Text mt={5}>The ultimate measure of any development effort is its results after implementation. For SNE’s ‘Build-A-Car’ feature, the metrics reveal not only the improved functionality of the system but also its significant impact on business outcomes.
+      </Text>
+      <Text mt={5}><strong>Increase in Sales:</strong>
+      </Text>
+      <Text mt={5}>The year-on-year sales figures are telling. In 2023, we observed a remarkable 16.8% increase in car sales, demonstrating the efficacy of the streamlined purchasing process and the improved dealership experience offered by the SNEDrive application.
+      </Text>
+      <ProjectImage src="/images/projects/Sales Metric.png" alt="Sales" />
+      <Text mt={5}><strong>User Satisfaction and Time Savings Projections Based on User Testing Feedback:</strong>
+      </Text>
+      <Text mt={5}>Although direct measures of user satisfaction and time savings were not established, positive feedback from user testing—especially regarding the streamlined process and clarity of the interface—allows us to estimate a 40% increase in overall user satisfaction.
+      </Text>
+      <Text mt={5}>By simplifying the configuration process and reducing the number of necessary clicks, we estimate that retailers are saving an average of 5 minutes per configuration. This leads to substantial time savings over the course of a day. Additionally, with the implementation of the ‘Save as Draft’ feature, we estimate that retailers can now recover from interruptions and resume work 50% faster than previously, minimizing downtime and boosting productivity.
+      </Text>
     </Section>
     </Container>
   </Layout>

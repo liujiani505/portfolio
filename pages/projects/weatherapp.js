@@ -6,7 +6,7 @@ import Section from '../../components/section'
 
 const Project = () => (
   <Layout title="WeatherApp">
-    <Container mt={10} maxW="container.lg" >
+    <Container mt={10} maxW="container.md" >
     <Section delay={0.2}>
       <Title>
         WeatherApp
