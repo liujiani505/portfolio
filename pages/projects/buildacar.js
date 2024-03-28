@@ -149,7 +149,7 @@ const Project = () => (
       </Text>
       <Text mt={5}>In tackling this project, the main hurdle was making a wealth of information straightforward and navigable. Initially, I designed the system so users would select a car line and then a model. However, feedback from testing revealed it wasn&apos;t quite effective—it still felt too cluttered. So, I went back to the drawing board. The solution was to combine the car line and model selection into one step and introduce a filter function to help users quickly find what they&apos;re looking for. This streamlined approach significantly cut through the clutter, presenting the information clearly without overwhelming users. Now, finding the right car no longer feels like a chore.
       </Text>
-      <ProjectImage src="/images/projects/Build-A-Car.gif" alt="buildacar" mt={10}  width="100%"/>
+      <ProjectImage src="/images/projects/Filtering.gif" alt="Filtering" mt={10}  width="100%"/>
       <Text mt={5}>A key insight from our research particularly stood out: retailers were concerned about &quot;losing everything&quot; while configuring a new car, especially amid interruptions—a common scenario when juggling multiple customers.
       </Text>
       <Text mt={5}>To address this issue, I implemented &quot;Save as Draft&quot; and &quot;View Draft&quot; functionalities. These features enable retailers to manage interruptions stress-free, assured that their progress is preserved and can be easily resumed later. The introduction of these features received enthusiastic feedback, significantly improving workflow and efficiency for our busy retailers.
