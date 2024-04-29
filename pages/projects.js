@@ -6,7 +6,7 @@ import thumbHomeChef from '../public/images/projects/HomeChef home.png'
 import thumbtranslatorapp from '../public/images/projects/translatorapp.png'
 import thumbWeatherApp from '../public/images/projects/WeatherApp.png'
 import thumbcoinwatch from '../public/images/projects/coinwatch.png'
-import thumbbuildacar from '../public/images/projects/Build-A-Car home.png'
+// import thumbbuildacar from '../public/images/projects/Build-A-Car home.png'
 
 const Projects = () => {
     return (
